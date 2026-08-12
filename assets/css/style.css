@@ -142,7 +142,7 @@ body.travar{
 #hero .container .row .col-md-12 h1{
     font-size: 3.5rem;
     font-weight: 500;
-    line-height: 1.1;
+    line-height: .8;
     letter-spacing: -0.02em;
     font-family: 'Inter', sans-serif;
 }
