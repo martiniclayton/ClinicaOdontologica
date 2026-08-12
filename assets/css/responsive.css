@@ -1,0 +1,38 @@
+/* NAVBAR */
+
+.divLogoFecharMenu{
+    display: none;
+}
+@media (max-width: 991px) {
+    #menuNav{
+        flex-direction: column;
+        align-items: start;
+        position: fixed;
+        padding: 40px;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(15px);
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        transition: .4s ease;
+    }
+
+    #menuNav.show{
+        transform: translateX(0);
+    }
+
+    #menuNav .navbar-nav{
+        margin: 0 !important;
+    }
+    .divLogoFecharMenu{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        color: white;
+    }
+}

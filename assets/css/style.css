@@ -1,0 +1,110 @@
+:root{
+    --cor-principal: white;
+    --cor-secundaria: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-principal{
+    width: 150px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    transition: .4s ease;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn-principal:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-nav{
+
+}
+
+body.travar{
+    overflow: hidden;
+}
+
+#header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: .4s ease;
+}
+
+#header.close #logo{
+    display: none;
+}
+
+#header.close #btn-toggle{
+    display: none;
+}
+
+.navbar-toggler{
+    border-color: white;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#header.scroll{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+#header.scroll button{
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+#header.scroll .navbar-toggler{
+    border-color: white;
+}
+
+#header.scroll .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+#header.scroll .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#header a{
+    color: white;
+}
+
+
+#hero{
+    position: relative;
+    height: 100vh;
+    background-image: url(../imagens/hero/full-equiped-medical-cabinet.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#hero::before{
+    position: absolute;
+    inset: 0;
+    content: "";
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
