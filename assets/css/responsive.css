@@ -3,6 +3,7 @@
 .divLogoFecharMenu{
     display: none;
 }
+
 @media (max-width: 991px) {
     #menuNav{
         flex-direction: column;
@@ -10,14 +11,14 @@
         position: fixed;
         padding: 40px;
         top: 0;
-        left: 0;
-        transform: translateX(-100%);
+        left: -100%;
         background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(15px);
         width: 80%;
         max-width: 350px;
         height: 100vh;
         transition: .4s ease;
+        z-index: 20;
     }
 
     #menuNav i{
@@ -34,7 +35,7 @@
     }
 
     #menuNav.show{
-        transform: translateX(0);
+        left: 0;
     }
 
     #menuNav .navbar-nav{
@@ -59,5 +60,9 @@
         justify-content: center;
         align-items: center;
         text-align: center; */
+    }
+
+    #logo img{
+        width: 150px;
     }
 }
