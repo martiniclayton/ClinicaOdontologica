@@ -36,3 +36,9 @@
         color: white;
     }
 }
+
+@media (max-width: 630px) {
+    .paddingMobile{
+        padding: 0 20px;
+    }
+}
