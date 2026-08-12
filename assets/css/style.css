@@ -94,11 +94,19 @@ body.travar{
 
 #hero{
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../imagens/hero/dentist-chair-ready-be-used.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+#hero .textHero{
+    max-width: 650px;
 }
 
 #hero::before{
@@ -117,7 +125,6 @@ body.travar{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -125,21 +132,22 @@ body.travar{
     letter-spacing: .2px;
 }
 
-#hero .container .row .col-md-8{
+#hero .container .row .col-md-12{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-#hero .container .row .col-md-8 h1{
-    font-size: 2.75rem;
+#hero .container .row .col-md-12 h1{
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.02em;
     font-family: 'Inter', sans-serif;
 }
 
-#hero .container .row .col-md-8 p{
+#hero .container .row .col-md-12 p{
     color: rgba(255, 255, 255, 0.8);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;

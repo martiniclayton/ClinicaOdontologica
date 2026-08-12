@@ -41,4 +41,10 @@
     .paddingMobile{
         padding: 0 20px;
     }
+    .textHero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
