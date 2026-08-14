@@ -170,3 +170,80 @@ body.travar{
     width: 200px;
     padding: 10px;
 }
+
+
+
+/* Por que nos escolher */
+
+.titulo-secao{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.chamada-secao{
+    font-size: clamp(1.75rem, 1.2rem + 1.5vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .005em;
+}
+
+#Por-que-nos-escolher{
+
+}
+
+#Por-que-nos-escolher  p{
+    font-size: clamp(0.938rem, 0.85rem, 1.125rem);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#Por-que-nos-escolher .row .col-md-6{
+    align-self: baseline;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto 1fr auto;
+    align-items: stretch;
+}
+
+@media (max-width: 991px) {
+    .container-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
+
+.card{
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    padding:  30px;
+    border-radius: 0;
+    min-width: 300px;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.card .header-card{
+    width: 100%;
+    font-size: clamp(1rem, 1.5rem, 2.5rem);
+    font-weight: 500;
+    margin: 0 0 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .header-card{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card .titulo-card{
+    font-size: clamp(1.125rem, 1rem, 1.25rem);
+    width: 100%;
+}
+
+.card .descricao-card{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
